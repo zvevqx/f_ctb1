@@ -5,51 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>log website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}"> 
   </head>
   <body>
-    <div id="menu">
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">cat1</a></li>
-                <li><a href="#">cat2</a></li>
-                <li><a href="#">cat3</a></li>
-                <li><a href="#">info</a></li>
-            </ul>
-        </nav>
-    </div>
+
+    {% include 'menu.html' %}
 
     <div id="content-wrapper">
-        <h1>Le titre de notre Article trop cool ou pas </h1>
+        <h1>{{ page.title }}</h1>
         <div id="metad">
-            <span class="cat">recherches</span>
-            <span class="author">maya</span>
-            <span class="date">08-05-2023</span>
+            <span class="cat">{{ page.cat }}</span>
+            <span class="author">{{ page.author }}</span>
+            <span class="date">{{ page.published }}</span>
         </div>
         <div id="content">
-            <img src="https://cdn3.photoblogstop.com/wp-content/uploads/2012/07/Sierra_HDR_DFX8048_2280x819_Q40_wm_mini-1726x819__-1140x541.jpg"/>
-            
-            <p>
-                She was born on February 8, 1900, at Jagadalpur in erstwhile princely state of Bastar.[3] Her father Daniel Sabat was a physician. Her mother's name was Monika Sabat. Her maternal grandfather was from Dandamukundapur, Puri.[4] Her father moved to Bastar and converted to Christianity before her birth. Soon after her birth she moved to Burma with her family. She spent her early childhood in Burma. 
-            </p>
-
-
-            <p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kuntala_Kumari_Sabat_%28restored%29.jpg/220px-Kuntala_Kumari_Sabat_%28restored%29.jpg" />
-            Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5]
-            Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5]
-            Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5]
-            Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5]
-            <em><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kuntala_Kumari_Sabat_%28restored%29.jpg/220px-Kuntala_Kumari_Sabat_%28restored%29.jpg" /></em>
-            Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5]
-            Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5]
-            <b><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kuntala_Kumari_Sabat_%28restored%29.jpg/220px-Kuntala_Kumari_Sabat_%28restored%29.jpg" /></b>
-            Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5]
-            Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5]
-            Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5]
-            </p>            
-
+            {{ page }}
         </div>
     </div>
 
