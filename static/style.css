@@ -1,52 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,800;1,400&display=swap');
-
-
-
 body{
-    font-family: 'Open Sans', sans-serif;
-}
-a {
-    text-decoration : none ;
-    color : #000;
+    margin:0;
+    padding:0;    
+    font-size : 24px;
 }
 
-#works {
-    display : grid ;
-    grid-template-columns: 1fr 1fr  1fr 1fr 1fr;
-    //column-gap: 10px;
-    //row-gap : 10px;
+#menu ul {
+    list-style: none;
+    margin:0;
+    padding:10px 20px;
 }
 
-.work{
-    position:relative;
-    overflow:hidden;
+#menu ul li {
+    display:inline-block;
+    margin-right:20px;
 }
 
-#works .work .wimg {
-    height : 250px;
-    overflow:hidden;
-    display:grid;
+#menu ul li a{
+    color: #000000;
+    text-decoration : none;
+    font-size : 24px;
 }
 
-#works .work .wimg img {
-    width : 130%;
-    place-self: center;
+#articles ul {
+    list-style:none;
+    padding:0 0 0 0px;
 }
 
-.wdesc {
-    background:rgba(255,255,255,0.5);
-    border-radius: 10px;
-    position: absolute;
-    left : -100%;
-    padding :10px;
-    bottom:20px;
-    transition : all 0.3s linear ;
-    opacity : 0 ;
+#articles ul li{
+    font-size:32px;
+    padding:10px 0;
+    padding-left:20px;
+    border-bottom: 1px solid #000000;
+}
+
+#articles ul li h2{
+    display: inline-block;
+    margin:0;
+    font-size:1em;
+}
+
+#articles ul li a {
+    color : #000000;
+    text-decoration:none;
+}
+#articles ul li a:hover {
+    color : #0000ff;
+}
+ #articles ul li span , #articles h2{
+    padding-right:20px;
+}
+
+#content-wrapper{
+    width:80%;
+    margin:auto ;
+}    
+
+
+#content-wrapper h1{
+    font-size : 52px;
+    margin: 20px 0 0 0 ;
+}
+
+#metad{
+    margin: 5px 0 30px 0;
+}
+
+#metad span {
+    font-size : 24px;
+//    margin-right:20px;
+}
+
+#metad span:after{
+    content:" / ";
+    margin: 0 20px 0 20px;
+
+
+}
+#metad .cat {
+    font-weight: bolder;
+}
+
+#metad .author {
+    font-style: italic;
+}
+
+#metad .date {
 }
 
 
-.work:hover .wdesc {
-    left:10px;
-    opacity : 1 ;
+img {
+    width:100%;
+    height:auto;
 }
+
+p img{
+    width:150px;
+    height:auto;
+    float:left;
+    margin: 20px;
+ 
+}
+
+p b img{
+    width:250px;
+}
+p em img{
+    float:right;
+
+}
+
+
+p{
+    line-height:1.5em;
+    margin-top:1.5em;
+    margin-bottom:1.5em;
+    text-align:justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
