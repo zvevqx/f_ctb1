@@ -18,10 +18,16 @@ pages.get('foo')
 def index():
     # Articles are pages with a publication date
     articles = (p for p in pages if 'published' in p.meta)
-    # Show the 10 most recent articles, most recent first.
     latest = sorted(articles, reverse=True,
                     key=lambda p: p.meta['published'])
-    return render_template('index.html', articles=latest)
+
+    catList = []
+    for a in latest:
+        catList.append(a.meta['cat'])
+    
+    catList = list(dict.fromkeys(catList))
+
+    return render_template('index.html', articles=latest , catList=catList  )
 
 
 
