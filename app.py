@@ -42,16 +42,15 @@ def info():
 
 @app.route('/cat/<catname>')
 def catPage(catname):
-    articles = (p for p in pages if 'published' in p.meta and p.meta['cat']==catname )
+    articles = (p for p in pages if 'published' in p.meta and 'cat' in p.meta and p.meta['cat']==catname )
     latest = sorted(articles, reverse=True,
                     key=lambda p: p.meta['published'])
     catList = Liste_cat()
     return render_template('index.html', articles=latest , catList=catList  )
 
-
 @app.route('/author/<authorname>')
 def authorPage(authorname):
-    articles = (p for p in pages if 'published' in p.meta and  p.meta['author']==authorname )
+    articles = (p for p in pages if 'published' in p.meta and 'author' in p.meta and p.meta['author']==authorname )
     latest = sorted(articles, reverse=True,
                     key=lambda p: p.meta['published'])
     catList = Liste_cat()
