@@ -103,7 +103,10 @@ a:hover{
     width:80%;
     margin:auto ;
 }    
-
+#content-wrapper pre{
+    font-size:2em;
+    color:#2c3e50;
+}
 
 #content-wrapper h1{
     font-size : 52px;

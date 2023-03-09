@@ -16,6 +16,16 @@ desc: ws
 
 Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5] Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5] Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P (Licentiate Medical Practitioners) degree in 1921 with a gold medal. She was fluent in Odia, Hindi, Bengali, English and Burmese.[5] Her father remarried while at Burma and Kuntala returned to Odisha with her Mother. She settled in Khurdha with her mother after returning from Burma. In spite of total lack of women's education her mother's perseverance allowed her to receive a good education. She studied from Ravenshaw Girls High School and continued her education in Orissa Medical School, Cuttack (Now Srirama Chandra Bhanja Medical College and Hospital). She earned her L.M.P
 
+some code  ( add 1 **tab** before every line )
+
+    def Liste_cat():
+        articles = (p for p in pages if 'published' in p.meta)
+        catList = []
+        for a in articles:
+            catList.append(a.meta['cat'])
+        catList = list(dict.fromkeys(catList))
+        return catList 
+
 
 [un lien](https://google.com)
 
