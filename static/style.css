@@ -184,12 +184,26 @@ p{
     overflow: hidden;
     height: 120px;
     display: grid;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
     align-items: center;
     align-content: space-around;
 }
 
+.img_container img{
+    width:200%;
+}
 
+.fullImg{
+    grid-column: span 4;
+    height: auto!important;
+}
 
+.fullImg img{
+    width:100%;
+}
 
 
 
