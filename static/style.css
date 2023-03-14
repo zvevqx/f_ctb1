@@ -49,29 +49,12 @@ a:hover{
     padding-left:50px;
 }
 
-.robot{
-    position:relative;
-}
-.robot:before{
- //   color:#FFF;
-    content:"🤖";
-    position:absolute;
-    left:-20px;
-    text-align:center;
-    top:0;
-    width:50px;
-    display:block;
-    font-size:1.5em;
-    line-height:1em;
-}
 
-.internet{
-    position:relative;
-}
 
-.internet:before{
-//    color:#0984e3;
-    content:"🌐";
+ul li h2{
+    position:relative;
+    }
+ul li h2:before{
     position:absolute;
     text-align:center;
     left:-20px;
@@ -82,6 +65,17 @@ a:hover{
     line-height:1em;
 }
 
+.robot:before{
+    content:"🤖";
+}
+
+.internet:before{
+    content:"🛰";
+}
+
+.linux:before{
+    content:"🐧";
+}
 
 #articles ul li a {
     color : #000000;
@@ -119,7 +113,6 @@ a:hover{
 
 #metad span {
     font-size : 2em;
-//    margin-right:20px;
 }
 
 #metad span:after{
@@ -170,40 +163,44 @@ p{
     font-size:2.5em;
 }
 
-
 #gal {
-    display : grid ;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    }
+	display : grid ;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 10px;
+	row-gap: 10px;
+}
 
 
 .img_container {
-    position: relative;
-    overflow: hidden;
-    height: 120px;
-    display: grid;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
+	position: relative;
+	overflow: hidden;
+	height: 120px;
+	display: grid;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
 }
 
 .img_container img{
-    width:200%;
+	width:200%;
 }
 
 .fullImg{
-    grid-column: span 4;
-    height: auto!important;
+	grid-column: span 4;
+	height: auto!important;
 }
 
 .fullImg img{
-    width:100%;
+	width:100%;
 }
+
+
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 title : article type 
 author: zvevqx
 published: 2021-11-22
-cat: template
+cat: linux
 desc: ws
 
 ...

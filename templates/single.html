@@ -21,13 +21,13 @@
         <div id="content">
             {{ page }}
         </div>
-        <div id="gal">
-            {% for img in imgs : %}
-            <div class = "img_container">
-               <img src="/static/test/{{img}}"/>
-            </div>
-            {% endfor %}            
-        </div>
+	<div id="gal">
+		{% for img in imgs : %}
+		<div class = "img_container">
+			<img src="/pages/{{page.path}}/{{img}}"/>
+		</div>
+		{% endfor %}
+	</div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

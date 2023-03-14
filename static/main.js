@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
     $('#gal .img_container img').click(function(){
-            $(" #gal .img_container").removeClass("fullImg");
+    //        $(" #gal .img_container").removeClass("fullImg");
             $(this).parent().toggleClass("fullImg");
     });
 
