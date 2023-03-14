@@ -24,7 +24,8 @@
 	<div id="gal">
 		{% for img in imgs : %}
 		<div class = "img_container">
-			<img src="/pages/{{page.path}}/{{img}}"/>
+                        {% set img_url = page.path + '/' + img %}
+			<img src="pages/{{page.path}}/{{img}}"/>
 		</div>
 		{% endfor %}
 	</div>

@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask , send_from_directory
 from flask_flatpages import FlatPages
 from flask import render_template
 import os
@@ -31,12 +31,7 @@ def imagelist(articlename):
     else:
         return None, None
 
-@app.errorhandler(404)
-def page_not_found(e):
-        # note that we set the 404 status explicitly
-            return "NOPE NOTHING HERE plz leave now 🛸"
 
-#@app.route(app.config['APPLICATION_ROOT'] + '/')
 @app.route('/')
 def index():
     # Articles are pages with a publication date
@@ -79,10 +74,15 @@ def authorPage(authorname):
     return render_template('index.html', articles=latest , catList=catList  )
 
 
-@app.route('/yolo')
-def app1():
-        return 'This is app1!'
+@app.route('/pages/<path:path>')
+def serve_pages(path):
+    return send_from_directory('pages', path)
 
+
+@app.errorhandler(404)
+def page_not_found(e):
+        # note that we set the 404 status explicitly
+            return "NOPE NOTHING HERE plz leave now 🛸"
 
 if __name__ == "__main__":
         app.run(host='0.0.0.0')
