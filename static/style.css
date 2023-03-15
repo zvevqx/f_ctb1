@@ -78,6 +78,9 @@ ul li h2:before{
     content:"🤖";
 }
 
+.various:before{
+    content:"💾";
+}
 .internet:before{
     content:"🛰";
 }
@@ -166,10 +169,11 @@ img {
 // 
 //}
 
-p b img{
+p strong img{
     width:250px;
 }
 p em img{
+    width:150px;
     float:right;
 
 }
@@ -218,6 +222,20 @@ p{
 }
 
 
+key{
+    padding:1px 6px;
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 1px rgb(120# 20# 20) ,
+               -1px -1px 0px 1px rgb(220 ## 20## 20);
+    
+    background: #efefef;
+    background: rgb(185# 85# 85);
+    background: radial-gradient( rgba(200## 00# 90# ) 1%, rgba(225## 25## 25# ) 100%, rgba(185# 85# 85# ) 100%)
+;
+}
+
+
 @media (max-width: 600px) {
        
     #articles ul li span {
@@ -237,15 +255,4 @@ p{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 

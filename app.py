@@ -9,6 +9,15 @@ FLATPAGES_AUTO_RELOAD = True
 app = Flask(__name__) 
 app.config['APPLICATION_ROOT'] = '/flaskapp'
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+FLATPAGES_MARKDOWN_EXTENSIONS = ['extra']
+FLATPAGES_EXTENSION_CONFIGS = {
+    'codehilite': {
+        'linenums': 'True'
+    }
+}
+
+
+
 app.config.from_object(__name__)
 pages = FlatPages(app)
 application = app
