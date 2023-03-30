@@ -13,7 +13,7 @@ learn more about `ssh` -> [https://www.ssh.com/ssh/](https://www.ssh.com/ssh/)
 start terminal <key>ctrl</key> + <key>alt</key> + <key>t</key>
 
 ~~~ bash
-ssh pi@er401.duckdns.org:22
+ssh -p portnumber pi@er401.duckdns.org
 ssh user @ distant_server.address : connection_port (default to 22 )
 ~~~
 
