@@ -5,6 +5,7 @@ cat: linux
 desc: ws
 
 ...
+
 # Vim Editor
 
 Vim is a powerful and popular text editor that runs in the command-line interface. It is known for its efficient and customizable editing features that allow users to edit text with speed and precision.
