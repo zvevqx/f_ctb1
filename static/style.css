@@ -189,7 +189,7 @@ p{
 
 #gal {
 	display : grid ;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr ;
 	column-gap: 10px;
 	row-gap: 10px;
 }
@@ -213,7 +213,7 @@ p{
 }
 
 .fullImg{
-	grid-column: span 4;
+	grid-column: span 3;
 	height: auto!important;
 }
 
