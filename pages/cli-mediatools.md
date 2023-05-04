@@ -68,6 +68,7 @@ ImageMagick's `mogrify` command allows you to process multiple images in a direc
 
 Note that mogrify modifies the original files in place, so be sure to make a backup of your files before using this command 
 
+| Command | Description|
 | --- | --- |
 | mogrify -resize 50% *.jpg | Resize all JPEG files in the current directory to 50% of their original size |
 | mogrify -format png *.jpg | Convert all JPEG files in the current directory to PNG |
