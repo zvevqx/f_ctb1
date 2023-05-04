@@ -59,7 +59,7 @@ ImageMagick is a powerful tool for manipulating images.
 
 ImageMagick's `mogrify` command allows you to process multiple images in a directory at once. Here are some useful commands:
 
-| Command | Description
+| Command | Description |
 | --- | --- |
 | mogrify -resize 50% *.jpg | Resize all JPEG files in the current directory to 50% of their original size |
 | mogrify -format png *.jpg | Convert all JPEG files in the current directory to PNG |
