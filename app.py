@@ -1,4 +1,4 @@
-from flask import Flask , send_from_directory
+from flask import Flask , send_from_directory , request
 from flask_flatpages import FlatPages
 from flask import render_template
 import os
@@ -41,6 +41,15 @@ def imagelist(articlename):
         return None, None
 
 
+# this is chatgpt quick fix no love !
+def is_time(value):
+    try:
+        datetime.strptime(value, '%H:%M:%S')  # Adjust the format as needed
+        return True
+    except ValueError:
+        return False
+
+
 @app.route('/')
 def index():
     # Articles are pages with a publication date
@@ -55,6 +64,7 @@ def page(path):
     page = pages.get_or_404(path)
     catList = Liste_cat()
     g_path, imgs = imagelist(path)
+#    print(list(page.meta.values()))
     if imgs:
         return render_template('single.html', page=page ,catList=catList  , g_path=g_path, imgs = imgs)
     else :
@@ -86,6 +96,20 @@ def authorPage(authorname):
 @app.route('/pages/<path:path>')
 def serve_pages(path):
     return send_from_directory('pages', path)
+
+
+
+@app.route('/search', methods=['POST'])
+def search():
+    query = request.form['query']
+    print(query)
+    catList = Liste_cat()
+#    articles = (p for p in pages if 'published' in p.meta and query.lower() in metastr= lambda m : [item.lower() for item in list(p.meta.values())])
+    articles = (p for p in pages if 'published' in p.meta and any(isinstance(value,str) and query.lower() in value.lower() for value in p.meta.values()))
+    return render_template('index.html', articles=articles ,catList=catList)
+
+
+
 
 
 @app.errorhandler(404)
