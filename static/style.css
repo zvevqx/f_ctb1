@@ -18,7 +18,14 @@ body{
     display: grid;
     grid-template-columns: 8fr 2fr;
 }
+@media (max-width: 1080px) {
+    #menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom:40px
+}
 
+}
 #menu ul {
     list-style: none;
     margin:0;
