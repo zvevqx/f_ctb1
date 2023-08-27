@@ -20,7 +20,6 @@ body{
 }
 @media (max-width: 1080px) {
     #menu {
-    display: grid;
     grid-template-columns: 1fr;
     margin-bottom:40px
 }
@@ -236,7 +235,12 @@ th {
 img {
     width:100%;
     height:auto;
+    max-width: 1080px;
+    text-align: center;
+    display: block;
+    margin: auto;
 }
+
 
 //p img{
 //    width:150px;
