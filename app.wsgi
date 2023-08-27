@@ -1,12 +1,13 @@
-#!/usr/bin/env python3
-from app import app
+import os
+import sys
+
+
+sys.path.insert(0, os.path.dirname(__file__))
+
 
 def application(environ, start_response):
-        return app(environ, start_response)
-
-if __name__ == "__main__":
-    app.run()
-
-
-
-
+    start_response('200 OK', [('Content-Type', 'text/plain')])
+    message = 'It works!\n'
+    version = 'Python v' + sys.version.split()[0] + '\n'
+    response = '\n'.join([message, version])
+    return [response.encode()]
