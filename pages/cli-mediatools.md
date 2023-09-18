@@ -6,6 +6,7 @@ desc: ws
 
 ...
 
+👾 MOST OF THIS PAGE IS DIRECT OUTPUT OF CHATGPT 3.5
 
 # Multimedia Cheat Sheet - Advanced Commands
 

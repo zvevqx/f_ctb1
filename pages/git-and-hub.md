@@ -6,6 +6,8 @@ desc: ws
 
 ...
 
+👾 MOST OF THIS PAGE IS DIRECT OUTPUT OF CHATGPT 3.5
+
 # Git and GitHub Basics
 
 ## What is Git?

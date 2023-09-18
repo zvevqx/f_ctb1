@@ -6,6 +6,8 @@ desc: ws
 
 ...
 
+👾 MOST OF THIS PAGE IS DIRECT OUTPUT OF CHATGPT 3.5
+
 # Basic Bash Commands for Navigating a File System
 
 Here are some of the basic Bash commands you can use to navigate a file system:
